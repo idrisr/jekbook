@@ -16,19 +16,3 @@ class YAMLFrontMatterPreProcessor(Preprocessor):
         else:
             resources['front_matter'] = {}
         return nb, resources
-
-def jekyllify(path):
-    return '<img src="{{site.baseurl | append: "/assets/images/' + path + '"}}">'
-
-
-
-#  c = get_config()
-#  c.TemplateExporter.template_file = "my.tpl"
-#  c.MarkdownExporter.preprocessors = [YAMLFrontMatterPreProcessor]
-#  c.ExtractOutputPreprocessor.output_filename_template = '{unique_key}_{cell_index}_{index}{extension}'
-#  c.MarkdownExporter.enabled = True
-#  c.FilesWriter.build_directory = "moveme"
-#  c.Application.log_level = 0
-#  c.TemplateExporter.filters = {'jekyllify': jekyllify}
-
-#  #  jupyter nbconvert --config mycfg.py --to markdown  99-sample-notebook.ipynb
