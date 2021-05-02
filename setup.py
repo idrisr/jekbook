@@ -10,7 +10,7 @@ setuptools.setup(
     author_email="id@hippoplant.com",
     description="It's an exporter for jupyter with jekyll"
     long_description=long_description,
-    url="https://github.com/idrisr/git-and-pip",
+    url="https://github.com/idrisr/jekbook",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
